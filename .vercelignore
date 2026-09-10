@@ -1,0 +1,4 @@
+tools/
+downloads/
+.DS_Store
+*.log
