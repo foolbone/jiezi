@@ -179,7 +179,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer;color:inhe
 }
 .nav-inner{max-width:1120px;margin:0 auto;padding:0 28px;height:64px;display:flex;align-items:center;gap:32px}
 .brand{display:flex;align-items:center;gap:12px;font-family:var(--serif);font-size:21px;letter-spacing:.18em;font-weight:700}
-.brand .mark{width:30px;height:30px;flex:none}
+.brand .mark{width:30px;height:30px;flex:none;border-radius:7px;object-fit:contain}
 .seal-dot{display:inline-block;width:9px;height:9px;border-radius:50%;background:var(--cinnabar);margin-left:6px;vertical-align:middle}
 .nav-links{display:flex;gap:28px;margin-left:auto}
 .nav-links a{font-size:14.5px;color:var(--ink-soft);letter-spacing:.04em;transition:color .18s var(--ease);padding:4px 0;border-bottom:1px solid transparent}
@@ -207,7 +207,7 @@ button{font-family:inherit;border:none;background:none;cursor:pointer;color:inhe
   radial-gradient(700px 420px at 88% 110%, rgba(201,186,160,.20), transparent 60%);pointer-events:none}
 .enso-bg{position:absolute;top:-220px;left:50%;transform:translateX(-50%);width:760px;height:760px;opacity:.055;pointer-events:none}
 .hero-mark{display:flex;justify-content:center;margin-bottom:28px}
-.hero-mark svg{width:86px;height:86px}
+.hero-mark img{width:86px;height:86px;object-fit:contain}
 .hero-title{font-family:var(--serif);font-weight:700;font-size:clamp(52px,9vw,92px);letter-spacing:.22em;line-height:1.15;text-indent:.22em}
 .hero-en{margin-top:14px;font-size:14px;letter-spacing:.52em;text-indent:.52em;color:var(--gray);text-transform:uppercase}
 .hero-tagline{margin:36px auto 0;max-width:680px;font-family:var(--serif);font-size:clamp(17px,2.2vw,21px);color:var(--ink-soft);line-height:2.05}
@@ -368,11 +368,7 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4vw,38px);line-
 <header class="nav">
   <div class="nav-inner">
     <a class="brand" href="#top" aria-label="芥子 首页">
-      <svg class="mark" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-        <rect width="64" height="64" rx="14" fill="#F4EFE6"/>
-        <circle cx="32" cy="32" r="19" fill="none" stroke="#1F1D1A" stroke-width="5" stroke-linecap="round" stroke-dasharray="113 16" transform="rotate(125 32 32)"/>
-        <circle cx="44" cy="20" r="3.4" fill="#C5402F"/>
-      </svg>
+      <img class="mark" src="assets/logo-icon.png" alt="芥子" width="30" height="30">
       芥子<span class="seal-dot"></span>
     </a>
     <nav class="nav-links" aria-label="主导航">
@@ -406,10 +402,7 @@ h2{font-family:var(--serif);font-weight:700;font-size:clamp(28px,4vw,38px);line-
     <circle cx="380" cy="380" r="300" fill="none" stroke="#1F1D1A" stroke-width="3" stroke-linecap="round" stroke-dasharray="1800 190" transform="rotate(140 380 380)"/>
   </svg>
   <div class="hero-mark">
-    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-      <circle cx="100" cy="100" r="62" fill="none" stroke="#1F1D1A" stroke-width="13" stroke-linecap="round" stroke-dasharray="370 40" transform="rotate(125 100 100)"/>
-      <circle cx="138" cy="62" r="9" fill="#C5402F"/>
-    </svg>
+    <img src="assets/logo-icon.png" alt="芥子品牌图标" width="86" height="86">
   </div>
   <h1 class="hero-title serif">芥子</h1>
   <div class="hero-en">Jièzǐ · Novel Writing Workbench</div>
